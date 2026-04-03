@@ -164,14 +164,20 @@ Extracts:
   }
 }
 
-🛠️ Tech Stack
-FastAPI – API layer
-LangGraph – workflow orchestration
-OpenAI (gpt-4o-mini) – LLM processing
-Tesseract OCR – text extraction
 
-📂 Project Structure
-claim-pipeline/
+---
+
+## 🛠️ Tech Stack
+
+- **FastAPI** – API layer  
+- **LangGraph** – workflow orchestration  
+- **OpenAI (gpt-4o-mini)** – LLM processing  
+- **Tesseract OCR** – text extraction  
+
+---
+
+## 📂 Project Structure
+
 │
 ├── app/
 │   ├── main.py
@@ -187,33 +193,58 @@ claim-pipeline/
 │
 └── README.md 
 
-⚡ Setup & Run
+
+---
+
+## ⚡ Setup & Run
+
+```bash
 git clone <repo>
 cd claim-pipeline
 
 pip install -r requirements.txt
 
-Set API Key:
+## 🚀 Setup Instructions
+
+### 1. Set API Key
+
+```bash
 setx OPENAI_API_KEY "your_api_key"
+```
 
-Run Server:
+### 2. Run Server
+
+```bash
 uvicorn app.main:app --reload
+```
 
-Open:
+### 3. Open API Docs
+
+```
 http://127.0.0.1:8000/docs
+```
 
-🎯 Key Design Decisions
-Used LangGraph for explicit multi-agent orchestration
-Avoided per-page LLM calls → reduced cost & latency
-Added fallback logic → ensures no page is missed
-Designed agents modularly → easy to scale
+---
 
-🚀 Future Improvements
-Hybrid classification (rule-based + LLM)
-Async processing for large PDFs
-Store outputs in PostgreSQL
-Add vector database for semantic retrieval
+## 🎯 Key Design Decisions
 
-👨‍💻 Author
-Rohan
+* Used **LangGraph** for explicit multi-agent orchestration
+* Avoided **per-page LLM calls** → reduced cost & latency
+* Added **fallback logic** → ensures no page is missed
+* Designed agents **modularly** → easy to scale
+
+---
+
+## 🚀 Future Improvements
+
+* Hybrid classification (**rule-based + LLM**)
+* Async processing for large PDFs
+* Store outputs in **PostgreSQL**
+* Add vector database for semantic retrieval
+
+---
+
+## 👨‍💻 Author
+
+**Rohan**
 Backend Developer | AI Systems
