@@ -1,4 +1,11 @@
 # 🚀 Claim Processing Pipeline (FastAPI + LangGraph)
+## 🎥 Demo
+
+A quick walkthrough of the full pipeline (PDF → classification → structured output):
+
+👉 https://www.loom.com/share/31eb711cc7464bcc8ce8ddb64d62d85b
+
+---
 
 An AI-powered backend system that processes health insurance claim PDFs and extracts structured data using **LangGraph-based multi-agent workflows**.
 
